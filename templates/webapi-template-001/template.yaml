@@ -37,8 +37,6 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-            allowedOwners:
-              - shouji-satou
         pluginLocation:
           type: string
           title: Where to publish this new repository?
