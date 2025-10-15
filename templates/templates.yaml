@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: mytest-collection
+  description: 検証用テンプレート一覧
+spec:
+  type: url
+  targets:
+    - templates/webapi-template-001/template.yaml
+    - templates/webapi-template-002/template.yaml
+    - templates/webapi-template-003/template.yaml
