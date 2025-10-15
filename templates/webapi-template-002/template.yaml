@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: create-webapi-template-002
-  title: Create CSharp Webapi Template
+  title: Create Webapi Template 002
   description: Template for creating a Webapi application skeleton
   annotations:
     backstage.io/techdocs-ref: dir:.
