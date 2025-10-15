@@ -79,7 +79,7 @@ spec:
       action: debug:log
       input:
         message: |
-          "repoUrl: ${{ parameters.repoUrl | parseRepoUrl }}"
+          "repoUrl: ${{ parameters.repoUrl | parseRepoUrl | dump }}"
           "repoName: ${{ (parameters.repoUrl | parseRepoUrl).repo }}"
           "orgName: ${{ (parameters.repoUrl | parseRepoUrl).owner }}"
 
