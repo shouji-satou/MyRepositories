@@ -107,6 +107,42 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
         sourcePath: project
 
+    - id: create-branch-feature
+      if: ${{ parameters.pluginLocation === 'Create a new repository within the specified organization' }}
+      name: Create branch using GitHub CLI
+      action: script
+      input:
+        script: |
+          gh repo clone ${{ parameters.repoUrl }}
+          cd $(basename "${{ parameters.repoUrl }}")
+          git checkout main
+          git checkout -b feature/feature-01
+          git push origin feature/feature-01
+
+    - id: create-branch-develop
+      if: ${{ parameters.pluginLocation === 'Create a new repository within the specified organization' }}
+      name: Create branch using GitHub CLI
+      action: script
+      input:
+        script: |
+          gh repo clone ${{ parameters.repoUrl }}
+          cd $(basename "${{ parameters.repoUrl }}")
+          git checkout feature/feature-01
+          git checkout -b develop
+          git push origin develop
+
+    - id: create-branch-develop
+      if: ${{ parameters.pluginLocation === 'Create a new repository within the specified organization' }}
+      name: Create branch using GitHub CLI
+      action: script
+      input:
+        script: |
+          gh repo clone ${{ parameters.repoUrl }}
+          cd $(basename "${{ parameters.repoUrl }}")
+          git checkout develop
+          git checkout -b release
+          git push origin release
+
     # This step creates a pull request with the contents of the working directory.
     - id: publishGithub
       name: Create pull request with the webapi skeleton
