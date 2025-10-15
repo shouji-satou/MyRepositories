@@ -83,12 +83,6 @@ spec:
           "repoName: ${{ (parameters.repoUrl | parseRepoUrl).repo }}"
           "orgName: ${{ (parameters.repoUrl | parseRepoUrl).owner }}"
 
-    - id: crt-repo
-      name: Create a new GitHub repository
-      action: github:repo:create
-      input:
-        repoUrl: ${{ parameters.repoUrl | parseRepoUrl }}
-
     # Each step executes an action
     - id: template
       name: Fetch Skeleton + Template
