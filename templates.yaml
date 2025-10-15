@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
   name: mytest-collection
-  description: 検証用テンプレート一覧
+  description: 検証用テンプレート群
 spec:
   type: url
   targets:
