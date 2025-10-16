@@ -52,7 +52,6 @@ spec:
           type: string
           ui:field: Secret
           description: The GITHUB_TOKEN to use for authorization to GitHub
-          default: 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
 
   steps:
     - id: dispatch-github-action-workflow
