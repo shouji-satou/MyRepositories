@@ -43,10 +43,12 @@ spec:
               title: Input 1
               type: string
               description: Value for input1
+              default: Test1
             input2:
               title: Input 2
               type: string
               description: Value for input2
+              default: Test2
         token:
           title: Authentication Token
           type: string
