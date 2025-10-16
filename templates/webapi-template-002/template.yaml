@@ -64,4 +64,4 @@ spec:
         workflowInputs: 
           input1: ${{ parameters.workflowInputs.input1 }}
           input2: ${{ parameters.workflowInputs.input2 }}
-        token: ${{ parameters.token }}
+        token: ${{ secrets.token }}
