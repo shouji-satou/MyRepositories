@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: dispatch-github-action-workflow
-  title: Dispatch a GitHub Action Workflow
+  title: Create Webapi Template 002
   description: Dispatch a GitHub Action Workflow
   tags:
   - github
