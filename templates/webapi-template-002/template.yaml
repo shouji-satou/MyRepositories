@@ -28,7 +28,7 @@ spec:
           title: Workflow ID
           type: string
           description: The GitHub Action Workflow filename
-          default: ./sample-workflow.yml
+          default: sample-workflow.yml
         branchOrTagName:
           title: Branch or Tag name
           type: string

@@ -1,0 +1,19 @@
+name: Example Workflow with 2 Inputs
+
+on:
+  workflow_dispatch:
+    inputs:
+      input1:
+        description: 'What is your name?'
+        required: true
+        default: 'friend'
+      input2:
+        description: 'What is your favorite color?'
+        required: true
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello, ${{ github.event.inputs.input1 }}! Your favorite color is ${{ github.event.inputs.input2 }}."
