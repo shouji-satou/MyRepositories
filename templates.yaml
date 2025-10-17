@@ -9,3 +9,4 @@ spec:
     - templates/webapi-template-001/template.yaml
     - templates/webapi-template-002/template.yaml
     - templates/webapi-template-003/template.yaml
+    - templates/create-backend-plugin-001/template.yaml
