@@ -4,7 +4,6 @@ metadata:
   name: hello-sample-backstage
   annotations:
     github.com/project-slug: imurata/hello-sample-backstage
-    'backstage.io/kubernetes-label-selector': 'app=hello-sample-backstage'
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
