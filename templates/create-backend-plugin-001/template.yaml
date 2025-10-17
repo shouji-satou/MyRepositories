@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: create-backend-plugin
-  title: Create Backend Plugin Template
+  name: create-backend-plugin-001
+  title: Create Backend Plugin Template 001
   description: Template for creating a backend plugin skeleton
   annotations:
     backstage.io/techdocs-ref: dir:.
