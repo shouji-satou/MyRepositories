@@ -1,0 +1,7 @@
+site_name: 'hello-sample-docs'
+
+nav:
+  - HomeDir: index.md
+
+plugins:
+  - techdocs-core
