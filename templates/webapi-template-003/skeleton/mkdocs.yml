@@ -1,5 +1,8 @@
 site_name: 'hello-sample-docs'
 
+theme:
+  name: readthedocs
+  
 nav:
   - HomeDir: index.md
 
